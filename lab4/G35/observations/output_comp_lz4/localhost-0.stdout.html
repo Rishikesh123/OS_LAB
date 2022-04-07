@@ -1,0 +1,102 @@
+<title>Vdbench output/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+04:22:28.895 04:22:28.894 SlaveJvm execution parameter:  '-m localhost'
+04:22:28.898 04:22:28.895 SlaveJvm execution parameter:  '-n localhost-10-201125-04.22.28.229'
+04:22:28.898 04:22:28.896 SlaveJvm execution parameter:  '-l localhost-0'
+04:22:28.899 04:22:28.896 SlaveJvm execution parameter:  '-p 5570'
+04:22:28.899 04:22:28.896 SlaveJvm positional parameter: 'SlaveJvm'
+04:22:28.990 04:22:28.988 successfully connected to master localhost
+04:22:28.991 04:22:28.990 Connection to localhost using port 5570 successful
+04:22:29.604 04:22:29.603 ticks_per_second: 100
+04:22:29.620 04:22:29.619 execute(): ls -l /new-pool
+04:22:29.689 04:22:29.688 Configuration interpretation took 0.09 seconds
+
+Link to Run Definitions:         <A HREF="#_1359044626">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_692342133">rd1 For loops: None</A>
+
+04:22:30.170 04:22:30.169 File '/var/log/messages' does not exist. Monitoring bypassed
+04:22:30.171 04:22:30.170 Beginning of run setup
+04:22:30.171 04:22:30.170 **********************
+04:22:30.171 
+04:22:30.171 
+04:22:30.171 04:22:30.170 File '/var/log/messages.1' does not exist. Monitoring bypassed
+04:22:30.295 04:22:30.295 Deleting old file structure.
+04:22:30.300 04:22:30.299 Starting initializeFileAnchor for rd=format_for_rd1 For loops: None anchor=fsd1
+04:22:30.307 04:22:30.306 Completed the creation of the directory list for /new-pool: 6 directories.
+04:22:30.310 04:22:30.309 Generated 40 file names; total anchor size: 5m (5,242,880)
+04:22:30.311 04:22:30.310 Writing control file for anchor=/new-pool at start of run.
+04:22:30.367 04:22:30.366 Completed control file for anchor=/new-pool at start of run.  dirs: 6/0 files: 40/0 sizes: 5m/0/0/0
+04:22:30.381 04:22:30.378 Completed initializeFileAnchor for fsd1: 0.08
+04:22:30.438 04:22:30.438 Started 8 threads for fwd=format,fsd=fsd1
+04:22:30.439 04:22:30.438 Started 8 FwgThreads for rd=format_for_rd1 For loops: None
+04:22:30.439 04:22:30.438 Waiting for task synchronization
+04:22:30.439 04:22:30.438 task_wait_start_complete: FwgThread OpFormat /new-pool 1
+04:22:30.663 04:22:30.663 Requesting full garbage collection
+04:22:30.665 04:22:30.665 GcTracker: cum:   0 intv:  0 ms:       0 mss:  0.00% Heap_MB max:  1024 curr:   130 used:    30 free:   100 
+04:22:30.697 04:22:30.697 GcTracker: cum:   1 intv:  1 ms:      28 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    21 free:   107 
+04:22:30.698 04:22:30.697 task_wait_start_complete() end
+
+<a name="_1359044626"></a><i><b>04:22:31.008 Starting RD=format_for_rd1</b></i>
+
+04:22:31.011 04:22:31.011 task_run_all(): 9 tasks
+04:22:31.535 04:22:31.535 Message to master: anchor=/new-pool mkdir complete.
+04:22:31.569 04:22:31.569 Message to master: anchor=/new-pool create complete.
+04:22:31.692 04:22:31.692 
+04:22:31.693 04:22:31.692 Miscellaneous statistics:
+04:22:31.693 04:22:31.693 FILE_CREATES        Files created:                                   40
+04:22:31.693 04:22:31.693 DIRECTORY_CREATES   Directories created:                              6
+04:22:31.694 04:22:31.694 FILE_DELETES        Files deleted:                                   40
+04:22:31.694 04:22:31.694 DIRECTORY_DELETES   Directories deleted:                              6
+04:22:31.695 04:22:31.694 WRITE_OPENS         Files opened for write activity:                 40
+04:22:31.695 04:22:31.695 DIR_EXISTS          Directory may not exist (yet):                    5
+04:22:31.696 04:22:31.695 FILE_CLOSES         Close requests:                                  40
+04:22:31.696 04:22:31.696 
+04:22:31.697 04:22:31.696 Java Heap in MB. max: 1024.000; current:  128.000; used:   24.057; free:  103.943
+04:22:31.698 04:22:31.697 Maximum native memory allocation:    1,048,576; Current allocation:    1,048,576
+04:22:32.493 04:22:32.492 Writing control file for anchor=/new-pool at end of run.
+04:22:32.518 04:22:32.511 Completed control file for anchor=/new-pool at end of run.  dirs: 6/6 files: 40/40 sizes: 5m/5m/40/5m
+04:22:32.518 04:22:32.513 End of run
+04:22:32.518 04:22:32.514 **********
+04:22:32.518 
+04:22:32.519 
+04:22:32.671 04:22:32.670 Beginning of run setup
+04:22:32.671 04:22:32.670 **********************
+04:22:32.671 
+04:22:32.671 
+04:22:32.750 04:22:32.748 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+04:22:32.754 04:22:32.753 Reading control file for anchor=/new-pool
+04:22:32.762 04:22:32.762 Completed reading control file.
+04:22:32.763 04:22:32.762 Completed the creation of the directory list for /new-pool: 6 directories.
+04:22:32.765 04:22:32.764 Generated 40 file names; total anchor size: 5m (5,242,880)
+04:22:32.765 04:22:32.764 No deletes and creates. Control file not cleared.
+04:22:32.765 04:22:32.764 During anchor creation for anchor=/new-pool there were 6 directories and 40 files
+04:22:32.765 04:22:32.765 Completed initializeFileAnchor for fsd1: 0.02
+04:22:32.777 04:22:32.775 Started 2 threads for fwd=fwd1,fsd=fsd1,operation=read
+04:22:32.778 04:22:32.777 Started 2 FwgThreads for rd=rd1 For loops: None
+04:22:32.778 04:22:32.777 Waiting for task synchronization
+04:22:32.778 04:22:32.777 task_wait_start_complete: FwgThread read /new-pool 1
+04:22:32.979 04:22:32.978 Requesting full garbage collection
+04:22:32.981 04:22:32.981 GcTracker: cum:   1 intv:  0 ms:       0 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    28 free:   100 
+04:22:33.002 04:22:33.001 GcTracker: cum:   2 intv:  1 ms:      19 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    21 free:   107 
+04:22:33.002 04:22:33.001 task_wait_start_complete() end
+
+<a name="_692342133"></a><i><b>04:22:34.007 Starting RD=rd1; elapsed=10; fwdrate=max. For loops: None</b></i>
+
+04:22:34.009 04:22:34.009 task_run_all(): 3 tasks
+04:22:44.264 04:22:44.263 
+04:22:44.265 04:22:44.264 Miscellaneous statistics:
+04:22:44.265 04:22:44.264 READ_OPENS          Files opened for read activity:              22,475
+04:22:44.265 04:22:44.265 FILE_BUSY           File busy:                                      509
+04:22:44.265 04:22:44.265 FILE_CLOSES         Close requests:                              22,475
+04:22:44.266 04:22:44.265 
+04:22:44.266 04:22:44.266 Java Heap in MB. max: 1024.000; current:  128.000; used:   59.041; free:   68.959
+04:22:44.266 04:22:44.266 Maximum native memory allocation:    1,056,768; Current allocation:        8,192
+04:22:44.267 04:22:44.267 Writing control file for anchor=/new-pool at end of run.
+04:22:44.288 04:22:44.287 Completed control file for anchor=/new-pool at end of run.  dirs: 6/6 files: 40/40 sizes: 5m/5m/40/5m
+04:22:44.288 04:22:44.288 End of run
+04:22:44.289 04:22:44.288 **********
+04:22:44.289 
+04:22:44.289 
+04:22:45.036 04:22:45.035 Master is requesting slave shutdown
+04:22:45.037 04:22:45.036 Java Heap in MB. max: 1024.000; current:  128.000; used:   60.849; free:   67.151

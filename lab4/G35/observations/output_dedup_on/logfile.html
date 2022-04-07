@@ -1,0 +1,202 @@
+<title>Vdbench output/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+02:09:42.179 input argument scanned: '-fdedup_zfs'
+02:09:42.181 java.vendor                   Ubuntu
+02:09:42.182 java.home                     /usr/lib/jvm/java-11-openjdk-amd64
+02:09:42.182 java.vm.specification.version 11
+02:09:42.182 java.vm.version               11.0.9.1+1-Ubuntu-0ubuntu1.20.04
+02:09:42.182 java.vm.vendor                Ubuntu
+02:09:42.182 java.specification.version    11
+02:09:42.182 java.class.version            55.0
+02:09:42.183 user.name                     root
+02:09:42.183 user.dir                      /home/saurabh/Desktop/Assignment-4/vdbench
+02:09:42.183 java.io.tmpdir                /tmp
+02:09:42.183 java.class.path               ./:./classes:./vdbench.jar
+02:09:42.183 os.name                       Linux
+02:09:42.183 os.arch                       amd64
+02:09:42.183 os.version                    5.4.0-54-generic
+02:09:42.183 sun.arch.data.model           64
+02:09:42.188 Flushing all reports
+02:09:42.228 Creating anchor for /new-pool,fsd=fsd1
+02:09:42.267 rd1 fsd to format: fsd1
+02:09:42.267 rd1 format on host: localhost
+02:09:42.275 Anchor size: anchor=/new-pool: dirs:            6; files:           40; bytes:     5.000m (5,242,880)
+02:09:42.377 Starting slave: /home/saurabh/Desktop/Assignment-4/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-201125-02.09.42.096 -l localhost-0 -p 5570   
+02:09:43.222 All slaves are now connected
+02:09:43.225 Slave localhost-0 (pid  10980) connected to master 10948
+02:09:43.432 Dedup options: 
+dedup_type:                            1
+dedup_ratio:                        3.00
+dedup_unit:                      131,072
+flipflop:                             no
+hot_dedup_sets:                        0
+hot_dedup_blocks:                      0
+dedup_sets_reqd:                      5%
+dedup_sets_used:                       2
+
+unique_blocks:                        11
+duplicate_blocks:                     29 (including 2 originals)
+dedup_pct:                         33.33
+dedup_adjusted:                    28.33
+total_size:                           5m
+unit_blocks:                          40
+
+Info only reliable if xfersize is multiple of dedupunit:
+uniques_written:                       0; expected 11; delta -11 
+duplicates_written:                    0; expected 29; delta -29 
+Total writes:                          0; delta -40
+flipflops:                             0
+
+Dsim counts: Hash size:               13 (11 uniques + 2 sets)
+Dsim counts: Duplicates:              27
+Dsim counts: Ratio:                 3.08 (3.07692)
+
+02:09:43.443 Dedup options: 
+dedup_type:                            1
+dedup_ratio:                        3.00
+dedup_unit:                      131,072
+flipflop:                             no
+hot_dedup_sets:                        0
+hot_dedup_blocks:                      0
+dedup_sets_reqd:                      5%
+dedup_sets_used:                       2
+
+unique_blocks:                        11
+duplicate_blocks:                     29 (including 2 originals)
+dedup_pct:                         33.33
+dedup_adjusted:                    28.33
+total_size:                           5m
+unit_blocks:                          40
+
+Info only reliable if xfersize is multiple of dedupunit:
+uniques_written:                       0; expected 11; delta -11 
+duplicates_written:                    0; expected 29; delta -29 
+Total writes:                          0; delta -40
+flipflops:                             0
+
+Dsim counts: Hash size:               13 (11 uniques + 2 sets)
+Dsim counts: Duplicates:              27
+Dsim counts: Ratio:                 3.08 (3.07692)
+
+
+Link to Run Definitions:         <A HREF="#_1338823963">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_1156060786">rd1 For loops: None</A>
+
+02:09:43.606 Flushing all reports
+02:09:43.616 slv=localhost-0 fwd=format fsd=fsd1 anchor=/new-pool threads= 8 skew= 0.00 operation=read 
+02:09:43.625 Dedup options: 
+dedup_type:                            1
+dedup_ratio:                        3.00
+dedup_unit:                      131,072
+flipflop:                             no
+hot_dedup_sets:                        0
+hot_dedup_blocks:                      0
+dedup_sets_reqd:                      5%
+dedup_sets_used:                       2
+
+unique_blocks:                        11
+duplicate_blocks:                     29 (including 2 originals)
+dedup_pct:                         33.33
+dedup_adjusted:                    28.33
+total_size:                           5m
+unit_blocks:                          40
+
+Info only reliable if xfersize is multiple of dedupunit:
+uniques_written:                       0; expected 11; delta -11 
+duplicates_written:                    0; expected 29; delta -29 
+Total writes:                          0; delta -40
+flipflops:                             0
+
+Dsim counts: Hash size:               13 (11 uniques + 2 sets)
+Dsim counts: Duplicates:              27
+Dsim counts: Ratio:                 3.08 (3.07692)
+
+02:09:43.745 Waiting for synchronization of all slaves
+02:09:44.261 Synchronization of all slaves complete
+
+<a name="_1338823963"></a><i><b>02:09:45.003 Starting RD=format_for_rd1</b></i>
+
+02:09:45.259 localhost-0: anchor=/new-pool mkdir complete.
+02:09:45.318 localhost-0: anchor=/new-pool create complete.
+Nov 25, 2020 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+02:09:46.178            1   40.0  1.891  26.0 4.17   0.0    0.0  0.000   40.0  1.891  0.00  5.00   5.00  131072   6.0  0.098   6.0  0.141  40.0  9.795  40.0  2.988  40.0  0.031  40.0  0.264
+02:09:46.274      avg_2-1 NaN  0.000 NaN NaN   0.0 NaN  0.000 NaN  0.000 NaN NaN NaN       0 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000
+02:09:46.275      std_2-1                                                                                                                                                                    
+02:09:46.276      max_2-1                                                                                                                                                                    
+02:09:46.468 
+02:09:46.468 Miscellaneous statistics:
+02:09:46.469 (These statistics do not include activity between the last reported interval and shutdown.)
+02:09:46.469 FILE_CREATES        Files created:                                   40         40/sec
+02:09:46.469 DIRECTORY_CREATES   Directories created:                              6          6/sec
+02:09:46.470 FILE_DELETES        Files deleted:                                   40         40/sec
+02:09:46.470 DIRECTORY_DELETES   Directories deleted:                              6          6/sec
+02:09:46.470 WRITE_OPENS         Files opened for write activity:                 40         40/sec
+02:09:46.470 DIR_EXISTS          Directory may not exist (yet):                    5          5/sec
+02:09:46.471 FILE_CLOSES         Close requests:                                  40         40/sec
+02:09:46.471 
+02:09:46.471 Flushing all reports
+02:09:46.472 Java Heap in MB. max:  512.000; current:   66.000; used:   19.336; free:   46.664
+02:09:46.509 slv=localhost-0 fwd=fwd1 fsd=fsd1 anchor=/new-pool threads= 2 skew= 0.00 operation=read 
+02:09:46.513 Dedup options: 
+dedup_type:                            1
+dedup_ratio:                        3.00
+dedup_unit:                      131,072
+flipflop:                             no
+hot_dedup_sets:                        0
+hot_dedup_blocks:                      0
+dedup_sets_reqd:                      5%
+dedup_sets_used:                       2
+
+unique_blocks:                        11
+duplicate_blocks:                     29 (including 2 originals)
+dedup_pct:                         33.33
+dedup_adjusted:                    28.33
+total_size:                           5m
+unit_blocks:                          40
+
+Info only reliable if xfersize is multiple of dedupunit:
+uniques_written:                       0; expected 11; delta -11 
+duplicates_written:                    0; expected 29; delta -29 
+Total writes:                          0; delta -40
+flipflops:                             0
+
+Dsim counts: Hash size:               13 (11 uniques + 2 sets)
+Dsim counts: Duplicates:              27
+Dsim counts: Ratio:                 3.08 (3.07692)
+
+02:09:46.520 Waiting for synchronization of all slaves
+02:09:46.951 Synchronization of all slaves complete
+
+<a name="_1156060786"></a><i><b>02:09:47.004 Starting RD=rd1; elapsed=10; fwdrate=max. For loops: None</b></i>
+
+Nov 25, 2020 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+02:09:48.107            1  27666  0.021  59.9 14.1 100.0  27666  0.021    0.0  0.000 108.0  0.00 108.08    4096   0.0  0.000   0.0  0.000   0.0  0.000 865.0  0.252 864.0  0.021   0.0  0.000
+02:09:49.131            2  36628  0.023  97.8 33.2 100.0  36628  0.023    0.0  0.000 143.0  0.00 143.07    4095   0.0  0.000   0.0  0.000   0.0  0.000  1145  0.136  1145  0.026   0.0  0.000
+02:09:50.075            3  53550  0.018  96.2 39.5 100.0  53550  0.018    0.0  0.000 209.1  0.00 209.18    4096   0.0  0.000   0.0  0.000   0.0  0.000  1674  0.087  1673  0.009   0.0  0.000
+02:09:51.114            4  54678  0.017  90.3 34.8 100.0  54678  0.017    0.0  0.000 213.5  0.00 213.58    4095   0.0  0.000   0.0  0.000   0.0  0.000  1708  0.083  1708  0.020   0.0  0.000
+02:09:52.089            5  50258  0.019  99.0 40.1 100.0  50258  0.019    0.0  0.000 196.3  0.00 196.31    4095   0.0  0.000   0.0  0.000   0.0  0.000  1571  0.083  1572  0.009   0.0  0.000
+02:09:53.028            6  98470  0.012  65.2 36.6 100.0  98470  0.012    0.0  0.000 384.6  0.00 384.62    4095   0.0  0.000   0.0  0.000   0.0  0.000  3076  0.037  3077  0.006   0.0  0.000
+02:09:54.021            7  79437  0.010  35.9 20.6 100.0  79437  0.010    0.0  0.000 310.2  0.00 310.28    4095   0.0  0.000   0.0  0.000   0.0  0.000  2482  0.026  2483  0.005   0.0  0.000
+02:09:55.019            8 132675  0.009  55.4 36.3 100.0 132675  0.009    0.0  0.000 518.2  0.00 518.26    4095   0.0  0.000   0.0  0.000   0.0  0.000  4147  0.024  4146  0.004   0.0  0.000
+02:09:56.016            9  87377  0.008  29.3 17.9 100.0  87377  0.008    0.0  0.000 341.3  0.00 341.32    4096   0.0  0.000   0.0  0.000   0.0  0.000  2730  0.020  2730  0.004   0.0  0.000
+02:09:57.019           10 130042  0.010  60.4 39.2 100.0 130042  0.010    0.0  0.000 507.9  0.00 507.97    4095   0.0  0.000   0.0  0.000   0.0  0.000  4064  0.031  4064  0.004   0.0  0.000
+02:09:57.053     avg_2-10  80346  0.012  68.7 32.8 100.0  80346  0.012    0.0  0.000 313.8  0.00 313.84    4095   0.0  0.000   0.0  0.000   0.0  0.000  2510  0.046  2510  0.007   0.0  0.000
+02:09:57.055     std_2-10  34964  0.144                   34964  0.144                                                                                  1092  0.312  1092  0.110             
+02:09:57.056     max_2-10 132675 28.905                  132675 28.905                                                                                  4147 24.228  4146 14.453             
+02:09:57.558 
+02:09:57.558 Miscellaneous statistics:
+02:09:57.558 (These statistics do not include activity between the last reported interval and shutdown.)
+02:09:57.559 READ_OPENS          Files opened for read activity:              23,465      2,346/sec
+02:09:57.559 FILE_BUSY           File busy:                                      552         55/sec
+02:09:57.559 FILE_CLOSES         Close requests:                              23,463      2,346/sec
+02:09:57.559 
+02:09:57.559 Flushing all reports
+02:09:57.560 Java Heap in MB. max:  512.000; current:   66.000; used:   20.810; free:   45.190
+02:09:57.596 Ending Reporter
+02:09:57.991 Vdbench execution completed successfully. Output directory: /home/saurabh/Desktop/Assignment-4/vdbench/output 
+
+02:09:58.951 Java Heap in MB. max:  512.000; current:   66.000; used:   20.256; free:   45.744

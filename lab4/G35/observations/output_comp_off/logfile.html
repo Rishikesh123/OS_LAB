@@ -1,0 +1,105 @@
+<title>Vdbench output/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+04:36:22.104 input argument scanned: '-fcompression_zfs'
+04:36:22.107 java.vendor                   Ubuntu
+04:36:22.107 java.home                     /usr/lib/jvm/java-11-openjdk-amd64
+04:36:22.107 java.vm.specification.version 11
+04:36:22.107 java.vm.version               11.0.9.1+1-Ubuntu-0ubuntu1.20.04
+04:36:22.108 java.vm.vendor                Ubuntu
+04:36:22.108 java.specification.version    11
+04:36:22.108 java.class.version            55.0
+04:36:22.108 user.name                     root
+04:36:22.108 user.dir                      /home/saurabh/Desktop/Assignment-4/vdbench
+04:36:22.108 java.io.tmpdir                /tmp
+04:36:22.108 java.class.path               ./:./classes:./vdbench.jar
+04:36:22.108 os.name                       Linux
+04:36:22.109 os.arch                       amd64
+04:36:22.109 os.version                    5.4.0-54-generic
+04:36:22.109 sun.arch.data.model           64
+04:36:22.116 Flushing all reports
+04:36:22.157 Creating anchor for /new-pool,fsd=fsd1
+04:36:22.195 rd1 fsd to format: fsd1
+04:36:22.195 rd1 format on host: localhost
+04:36:22.201 Anchor size: anchor=/new-pool: dirs:            6; files:           40; bytes:     5.000m (5,242,880)
+04:36:22.313 Starting slave: /home/saurabh/Desktop/Assignment-4/vdbench/vdbench SlaveJvm -m localhost -n localhost-10-201125-04.36.22.016 -l localhost-0 -p 5570   
+04:36:22.909 Slave localhost-0 (pid  19327) connected to master 19290
+04:36:23.019 All slaves are now connected
+
+Link to Run Definitions:         <A HREF="#_665576141">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_1599771323">rd1 For loops: None</A>
+
+04:36:23.359 Flushing all reports
+04:36:23.375 slv=localhost-0 fwd=format fsd=fsd1 anchor=/new-pool threads= 8 skew= 0.00 operation=read 
+04:36:23.475 Waiting for synchronization of all slaves
+04:36:24.338 Synchronization of all slaves complete
+
+<a name="_665576141"></a><i><b>04:36:25.009 Starting RD=format_for_rd1</b></i>
+
+04:36:25.373 localhost-0: anchor=/new-pool mkdir complete.
+04:36:25.432 localhost-0: anchor=/new-pool create complete.
+Nov 25, 2020 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+04:36:26.144            1   40.0  0.214  19.0 2.36   0.0    0.0  0.000   40.0  0.214  0.00  5.00   5.00  131072   6.0  0.199   6.0  0.130  40.0 10.136  40.0  3.841  40.0  0.064  40.0  0.168
+04:36:26.287      avg_2-1 NaN  0.000 NaN NaN   0.0 NaN  0.000 NaN  0.000 NaN NaN NaN       0 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000 NaN  0.000
+04:36:26.289      std_2-1                                                                                                                                                                    
+04:36:26.290      max_2-1                                                                                                                                                                    
+04:36:26.456 
+04:36:26.456 Miscellaneous statistics:
+04:36:26.456 (These statistics do not include activity between the last reported interval and shutdown.)
+04:36:26.457 FILE_CREATES        Files created:                                   40         40/sec
+04:36:26.457 DIRECTORY_CREATES   Directories created:                              6          6/sec
+04:36:26.458 FILE_DELETES        Files deleted:                                   40         40/sec
+04:36:26.459 DIRECTORY_DELETES   Directories deleted:                              6          6/sec
+04:36:26.459 WRITE_OPENS         Files opened for write activity:                 40         40/sec
+04:36:26.460 DIR_EXISTS          Directory may not exist (yet):                    5          5/sec
+04:36:26.460 FILE_CLOSES         Close requests:                                  40         40/sec
+04:36:26.460 
+04:36:26.461 Flushing all reports
+04:36:26.462 Java Heap in MB. max:  512.000; current:   66.000; used:   21.529; free:   44.471
+04:36:26.489 slv=localhost-0 fwd=fwd1 fsd=fsd1 anchor=/new-pool threads= 2 skew= 0.00 operation=read 
+04:36:26.494 Waiting for synchronization of all slaves
+04:36:26.935 Synchronization of all slaves complete
+
+<a name="_1599771323"></a><i><b>04:36:27.005 Starting RD=rd1; elapsed=10; fwdrate=max. For loops: None</b></i>
+
+Nov 25, 2020 ..Interval.. .ReqstdOps... ...cpu%...  read ....read..... ....write.... ..mb/sec... mb/sec .xfer.. ...mkdir.... ...rmdir.... ...create... ....open.... ...close.... ...delete...
+                            rate   resp total  sys   pct   rate   resp   rate   resp  read write  total    size  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp  rate   resp
+04:36:28.825            1  39712  0.013  60.1 14.6 100.0  39712  0.013    0.0  0.000 155.1  0.00 155.12    4096   0.0  0.000   0.0  0.000   0.0  0.000  1241  0.248  1241  0.016   0.0  0.000
+04:36:29.064            2 107144  0.009  96.6 46.6 100.0 107144  0.009    0.0  0.000 418.5  0.00 418.53    4096   0.0  0.000   0.0  0.000   0.0  0.000  3349  0.057  3348  0.013   0.0  0.000
+04:36:30.028            3  65006  0.016  94.1 38.7 100.0  65006  0.016    0.0  0.000 253.9  0.00 253.93    4096   0.0  0.000   0.0  0.000   0.0  0.000  2032  0.071  2031  0.017   0.0  0.000
+04:36:31.036            4 120936  0.009  81.1 43.8 100.0 120936  0.009    0.0  0.000 472.4  0.00 472.41    4096   0.0  0.000   0.0  0.000   0.0  0.000  3779  0.043  3779  0.005   0.0  0.000
+04:36:32.019            5 117152  0.010  72.4 36.9 100.0 117152  0.010    0.0  0.000 457.6  0.00 457.62    4095   0.0  0.000   0.0  0.000   0.0  0.000  3662  0.030  3662  0.004   0.0  0.000
+04:36:33.013            6 172880  0.007  66.4 40.1 100.0 172880  0.007    0.0  0.000 675.3  0.00 675.30    4095   0.0  0.000   0.0  0.000   0.0  0.000  5402  0.020  5403  0.004   0.0  0.000
+04:36:34.011            7 166333  0.007  48.2 38.3 100.0 166333  0.007    0.0  0.000 649.7  0.00 649.74    4096   0.0  0.000   0.0  0.000   0.0  0.000  5198  0.020  5197  0.003   0.0  0.000
+04:36:35.017            8 158711  0.007  46.8 30.6 100.0 158711  0.007    0.0  0.000 619.9  0.00 619.95    4095   0.0  0.000   0.0  0.000   0.0  0.000  4960  0.018  4961  0.004   0.0  0.000
+04:36:36.015            9 156670  0.008  52.2 38.4 100.0 156670  0.008    0.0  0.000 611.9  0.00 611.98    4095   0.0  0.000   0.0  0.000   0.0  0.000  4895  0.019  4896  0.004   0.0  0.000
+04:36:37.019           10 173099  0.008  56.1 42.4 100.0 173099  0.008    0.0  0.000 676.1  0.00 676.16    4095   0.0  0.000   0.0  0.000   0.0  0.000  5411  0.022  5410  0.004   0.0  0.000
+04:36:37.112     avg_2-10 137547  0.009  68.4 39.6 100.0 137547  0.009    0.0  0.000 537.2  0.00 537.29    4095   0.0  0.000   0.0  0.000   0.0  0.000  4298  0.029  4298  0.005   0.0  0.000
+04:36:37.116     std_2-10  37136  0.083                   37136  0.083                                                                                  1160  0.182  1160  0.119             
+04:36:37.117     max_2-10 173099 27.760                  173099 27.760                                                                                  5411 17.818  5410 20.093             
+04:36:37.227 *
+04:36:37.227 ****************************************************************************************
+04:36:37.227 * Warning: total amount of i/o per second per slave (137,548) greater than 100,000.    *
+04:36:37.228 * You may need to adjust your total slave count.                                       *
+04:36:37.228 *                                                                                      *
+04:36:37.228 * See 'jvms=' in documentation for raw (SD/WD) workloads).                             *
+04:36:37.228 * See 'host=' and/or 'clients=' in documentation for file system (FSD/FWD) workloads). *
+04:36:37.228 *                                                                                      *
+04:36:37.228 * rd=rd1 actively used 1 slaves.                                                       *
+04:36:37.229 ****************************************************************************************
+04:36:37.229 *
+04:36:37.433 
+04:36:37.433 Miscellaneous statistics:
+04:36:37.434 (These statistics do not include activity between the last reported interval and shutdown.)
+04:36:37.434 READ_OPENS          Files opened for read activity:              39,931      3,993/sec
+04:36:37.434 FILE_BUSY           File busy:                                      836         83/sec
+04:36:37.435 FILE_CLOSES         Close requests:                              39,929      3,992/sec
+04:36:37.435 
+04:36:37.435 Flushing all reports
+04:36:37.437 Java Heap in MB. max:  512.000; current:   66.000; used:   21.357; free:   44.643
+04:36:37.468 Ending Reporter
+04:36:38.527 Vdbench execution completed successfully. Output directory: /home/saurabh/Desktop/Assignment-4/vdbench/output 
+
+04:36:39.513 Java Heap in MB. max:  512.000; current:   66.000; used:   19.835; free:   46.165
